@@ -1,0 +1,26 @@
+---
+title: "The Planets"
+author: "Gaelyn Belmonte"
+date: "2022-09-21"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+
+```{r}
+planets <- c('mercury','venus','earth','mars','jupiter','saturn','uranus','neptune')
+
+miles_from_sun <- c(36, 67, 93, 142, 484, 890, 1790, 2780)
+
+planets
+miles_from_sun
+```
+
+```{r message=FALSE, warning=FALSE, dev=}
+
+barplot(height=miles_from_sun,
+        names = planets, 
+        ylab='miles from sun-millions')
+```
+
