@@ -17,7 +17,7 @@ planets
 miles_from_sun
 ```
 
-```{r message=FALSE, warning=FALSE, dev=}
+```{r message=FALSE, warning=FALSE}
 
 barplot(height=miles_from_sun,
         names = planets, 
